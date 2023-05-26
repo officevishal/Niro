@@ -10,7 +10,7 @@ def compare_user_ids(mrn_file, tli_file):
         for row in reader1:
             mrn_user_ids.add(row['User ID'])
 
-    # Read TLI file and collect user IDs
+    # Read TLI file user IDs
     with open(tli_file, 'r') as file2:
         reader2 = csv.DictReader(file2)
         for row in reader2:
